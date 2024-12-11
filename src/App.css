@@ -1,0 +1,6 @@
+:root{
+    --font-color:rgb(105, 11, 11);
+}
+.container{
+    color: var(--font-color);
+}
