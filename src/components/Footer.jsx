@@ -10,7 +10,7 @@ const Footer = () => {
             <img src="src/assets/3-d-global-technology-logo-very-luxury-elegant_1075284-52-removebg-preview.png" alt="Logo" width="100" />
           </div>
           <div className="footer-menu">
-            <a href="/Home">Home</a> <a href="/About Us">About Us</a>
+            <a href="/Home">Home</a> <a href="/About">About</a>
             <a href="/Services">Services</a>
             <a href="/Products">Products</a>
             <a href="/Blog">Blog</a>

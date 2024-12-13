@@ -1,8 +1,14 @@
-function Home(){
-    return(
-        <>
-        hello divya english demo pagal zaliyes kay 
-        </>
-    )
+import React from 'react'
+import './Home.css'
+
+const Home = () => {
+  return (
+    <>
+
+   <h1 className='text-dark'>Home Page</h1>
+
+    </>
+  )
 }
-export default Home;
+
+export default Home

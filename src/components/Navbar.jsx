@@ -1,47 +1,48 @@
 import React from "react";
 import "./Navbar.css";
+import { Link } from "react-router-dom"; // Make sure Link is imported from react-router-dom
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="/" className="navbar-logo">
-          <img className="navbar-world-logo"
+        <Link to="/" className="navbar-logo">
+          <img
+            className="navbar-world-logo"
             src="src/assets/3-d-global-technology-logo-very-luxury-elegant_1075284-52-removebg-preview.png"
-            alt=""
+            alt="Logo"
           />
-        </a>
-        <ul className="navbar-menu ">
+        </Link>
+        <ul className="navbar-menu">
           <li className="navbar-item">
-            <a href="/Home" className="navbar-link">
+            <Link to="/" className="navbar-link"> {/* Ensure proper path format */}
               Home
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/About Us" className="navbar-link">
-              About Us
-            </a>
+            <Link to="/about" className="navbar-link">
+              About
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/Services" className="navbar-link">
+            <Link to="/services" className="navbar-link">
               Services
-            </a>
+            </Link>
           </li>
-
           <li className="navbar-item">
-            <a href="/Products" className="navbar-link">
+            <Link to="/products" className="navbar-link">
               Products
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/Blog" className="navbar-link">
+            <Link to="/blog" className="navbar-link">
               Blog
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
-            <a href="/Contact" className="navbar-link">
+            <Link to="/contact" className="navbar-link"> {/* Fix to use Link */}
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
