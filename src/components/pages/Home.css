@@ -1,0 +1,56 @@
+/* Flex container for input and button */
+.input-button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between the input and button */
+    margin-top: 20px;
+  }
+  
+  /* Icon inside input field */
+  .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  /* Input field styling */
+  .input-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust width as needed */
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Left padding for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .input-field:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* "Open Demat Account" button styling */
+  .demat-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .demat-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  

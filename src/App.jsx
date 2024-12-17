@@ -8,6 +8,7 @@ import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import Blog from './components/pages/Blog';
 import Contact from './components/pages/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
