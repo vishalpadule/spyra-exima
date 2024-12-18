@@ -1,53 +1,99 @@
-/* Background and container styles */
-.login-container {
-    height: 100vh;
-    width: 800vh;
-    background-color: #f80e0e;
-  }
-  
-  .login-form {
-    width: 90%;
-    max-width: 400px;
-    height: 550px;
-    padding: 20px;
-    border-radius: 0px;
-    backdrop-filter: blur(10px);
-    background: rgb(223, 218, 218);
-    box-shadow: 0 8px 32px rgba(49, 48, 48, 0.8);
-    text-align: center;
-    color: #fff;
-    border: 1px solid rgba(33, 32, 32, 0.2);
-    position: fixed; 
-    top: 5vh; 
-    left: 5vh; 
-    margin: 20px;
-    
-    
-  }
-  
-  .login-title {
-    margin-top: 60px;
-    color: #2e2d2d;
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  /* Input fields and button styles */
-  .login-input {
-    margin-bottom: 15px;
-    border-radius: 0px;
-    font-size: 16px;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.2);
-    outline: none;
-  }
-  
- #button{
-    background-color: #f80e0e;
-    width: 80px; 
-    height: 50px; 
-    border-radius: 100px; 
- }
- 
- 
-  
-  
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url("src/assets/contact.jpg");
+  background-size: cover;
+}
+.contact .content {
+  max-width: 800px;
+  text-align: center;
+}
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: black;
+
+}
+.contact .content p {
+  font-size: large;
+  font-weight: 500;
+  color: black;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+  color: white;
+  font-weight: 600;
+}
+.container .contactInfo .box .text p{
+  color:whitesmoke;
+  font-weight: 600;
+}
+.contactForm {
+  width: 40%;
+  padding: 40px;
+  background: #eef0f1;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+}
+
+.contactForm .inputBox input[type="Submit"] {
+  width: 100px;
+  background:#007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.contactForm .inputBox textarea[type="textarea"] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+}

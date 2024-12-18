@@ -1,3 +1,6 @@
+*{
+  font-family: sans-serif;
+}
 .footer {
     background-color: #d1d1d1;
     color: black;
@@ -26,10 +29,13 @@
       text-decoration: none;
       justify-content: space-between;
       margin-left: 20px;
+      font-size: large;
+      font-weight: 200;
     }
     .footer-bottom {
       text-align: center;
       margin-top: 20px;
+      font-size: large;
     }
     .footer-socials img{
       width: 60px;  

@@ -1,57 +1,84 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./Contact.css"; // Importing the CSS file
+import React from "react";
+import "./Contact.css";
 
-const Login = () => {
-  const [credentials, setCredentials] = useState({ username: "", password: "" });
-  const [error, setError] = useState("");
-  const navigate = useNavigate();
-
-  const handleChange = (e) => {
-    setCredentials({ ...credentials, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Check if the username/email and password match
-    if (credentials.username === "pushkar" && credentials.password === "pushkar3011") {
-      // Store login state and username/email in localStorage
-      localStorage.setItem("isAuthenticated", "true");
-      localStorage.setItem("username", credentials.username);
-      navigate("/dashboard"); // Navigate to the Dashboard after successful login
-    } else {
-      setError("Invalid username or password");
-    }
-  };
-
+const Contact = () => {
   return (
-    
-    <div className="login-container d-flex justify-content-center mb-5 align-items-center">
-      <form className="login-form px-4" onSubmit={handleSubmit}>
-        <h2 className="login-title mb-4">Login</h2>
-        <input
-          type="text"
-          name="Mail or username"
-          placeholder="Mail or username"
-          value={credentials.username}
-          onChange={handleChange}
-          className="form-control login-input my-4"
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={credentials.password}
-          onChange={handleChange}
-          className="form-control login-input"
-        />
-        <button type="submit" className="btn text-white mt-3 w-25 border" id="button">
-          Login
-        </button>
-      </form>
-    </div>
+    <>
+      <div className="contact">
+        <div className="content">
+          <h2>Get In Touch With Us</h2>
+          <p>
+            For inquiries, feedback, or support, please fill out the form below,
+            and we’ll get back to you as soon as possible.
+          </p>
+        </div>
+        <div className="container">
+          <div className="contactInfo">
+            <div className="box">
+              <div className="icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div className="text">
+                <h3>Address</h3>
+                <p>Trimurti Chowk, Ambegaon Pathar, Pune.</p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div className="text">
+                <h3>Phone</h3>
+                <p>1234567890</p>
+              </div>
+            </div>
+            <div className="box">
+              <div className="icon">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <div className="text">
+                <h3>Email</h3>
+                <p>contact@spyraexim.in</p>
+              </div>
+            </div>
+          </div>
+          <div className="contactForm">
+            <form>
+              <h2>Send Message</h2>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  name="Fullname"
+                  required="required"
+                  placeholder="FullName"
+                />
+              </div>
+              <div className="inputBox">
+                <input
+                  type="text"
+                  name="Email"
+                  required="required"
+                  placeholder="Email"
+                />
+              </div>
+              <div className="inputBox">
+                <textarea
+                  type="textarea"
+                  name="Type Your Message"
+                  id="Message"
+                  required="required"
+                  placeholder="Type Your Message"
+                ></textarea>
+              </div>
+              <div className="inputBox">
+                <input type="Submit" name="Submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default Login;
+export default Contact;

@@ -58,3 +58,102 @@ article p{
     font-size: 17px;
     color: #fff;
 }
+/*---------------vision section----------*/
+.vision-section {
+    display: flex;
+    flex-direction: row; /* Default to horizontal layout */
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 50px;
+}
+
+/* Image Side */
+.image-side {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Side */
+.text-side {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.text-side h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: orange;
+    font-weight: 600;
+}
+
+.text-side p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+/*---------- numbers section css-------------*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Single counter box styling */
+  .single-counter {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .counter {
+    font-size: 100px;
+    color: #00aaff;
+  }
+  
+  .single-counter span {
+    font-size: 50px;
+    color: orange;
+    margin-left: 5px;
+  }
+  
+  /* Section styling for headings and text */
+  h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Column styling */
+  .col-6 {
+    width: 50%;
+    padding: 15px;
+  }
+  
+  .col-md-3 {
+    width: 25%;
+    padding: 15px;
+  }
+  
