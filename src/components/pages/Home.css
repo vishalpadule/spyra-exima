@@ -5,6 +5,11 @@
     gap: 10px; /* Spacing between the input and button */
     margin-top: 20px;
   }
+  .Group-img{
+    margin-top: 0px;
+    height: 200px;
+    width: 200px;
+  }
   
   /* Icon inside input field */
   .icon {
@@ -53,4 +58,60 @@
   .demat-button:hover {
     background-color: #0056b3; /* Darker blue on hover */
   }
+  .list-style{
+    list-style-type: none; /* Removes the bullets */
+    margin-right: 100px;
+  }
+  .imgstar{
+    height: auto;
+    width: 20px;
+  }
+  .slider-container {
+    width: 300px; /* Adjust this to the container width */
+    overflow: hidden; /* Hide the overflow content */
+    position: relative;
+  }
   
+  .slider {
+    display: flex; /* Items are aligned horizontally */
+    animation: slideLeft 12s ease-in-out infinite; /* Control the total duration */
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Each slide takes up full width */
+    text-align: left; /* Left align text */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .imgstar {
+    width: 20px; /* Adjust image size */
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  /* Animation for sliding left with delay */
+  @keyframes slideLeft {
+    0%, 25% {
+      transform: translateX(0); /* First slide visible */
+    }
+    33%, 58% {
+      transform: translateX(-100%); /* Slide to the second item */
+    }
+    66%, 91% {
+      transform: translateX(-200%); /* Slide to the third item */
+    }
+    100% {
+      transform: translateX(0); /* Loop back to the first slide */
+    }
+  }
+  .spanh1{
+    color: blue;
+    font-weight: 800;
+  }
+  span{
+    color: #53535F;
+    font-weight: 550;
+  }
+  .font{
+    color: #0056b3;
+  }
