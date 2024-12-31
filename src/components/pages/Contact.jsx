@@ -12,7 +12,7 @@ const Contact = () => {
             and we’ll get back to you as soon as possible.
           </p>
         </div>
-        <div className="container">
+        <div className="contact-container">
           <div className="contactInfo">
             <div className="box">
               <div className="icon">

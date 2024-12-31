@@ -18,23 +18,23 @@ const Home = () => {
           <div className="row">
             {/* Left Column */}
             <div className="col-6">
-              <img src="src/assets/Group 146697.svg" className="Group-img" alt="Trading Illustration" />
+              <img src="src/assets/Group 146697.svg" className="Group-img " alt="Trading Illustration" />
               <h1 className="Homeheading">Get an edge in <span className='spanh1'>Trading </span> &</h1>
               <h1 className="Homeheading"><span className='spanh1'>Investing</span></h1>
               <ul className='list-style'>
                 <li>
                   <p>
-                    <FaCheckCircle />&nbsp;<span>Free</span> account opening & <span>Zero</span> AMC
+                    <FaCheckCircle color="blue"/>&nbsp;<span>Free</span> account opening & <span>Zero</span> AMC
                   </p>
                 </li>
                 <li>
                   <p>
-                    <FaCheckCircle />&nbsp;<span>Zero brokerage</span> on equity delivery
+                    <FaCheckCircle color="blue"/>&nbsp;<span>Zero brokerage</span> on equity delivery
                   </p>
                 </li>
                 <li>
                   <p>
-                    <FaCheckCircle /> &nbsp;<span>All-in-One Account</span>  (Stocks/F&O/IPO/Mutual Funds)
+                  <FaCheckCircle color="blue" />&nbsp;<span>All-in-One Account</span>  (Stocks/F&O/IPO/Mutual Funds)
                   </p>
                 </li>
               </ul>
@@ -69,12 +69,6 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-
-
-
-
-
-
             </div>
 
             {/* Right Column */}
@@ -83,6 +77,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="trurtlment">
+         <div className=''>
+         Why Turtlemint?
+         </div>
       </div>
     </>
   );
